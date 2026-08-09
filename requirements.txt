@@ -1,5 +1,5 @@
-pandas
-numpy
+pandas==2.1.4
+numpy==1.26.4
 scikit-learn
 imblearn
 xgboost
@@ -21,6 +21,6 @@ ipykernel
 matplotlib
 plotly
 seaborn
-scipy
+scipy==1.11.4
 
- -e .
+# -e .

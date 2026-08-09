@@ -1,9 +1,4 @@
-from src.logger import logging
-from src.exception import CustomException
-import sys
+from src.pipline.training_pipeline import TrainPipeline
 
-logging.info("welcome")
-try:
-    a = 2/0
-except Exception as e:
-    raise CustomException(e,sys)
+obj = TrainPipeline()
+obj.run_pipeline()

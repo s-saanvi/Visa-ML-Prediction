@@ -8,7 +8,7 @@ from src.entity.config_entity import DataIngestionConfig
 from src.entity.artifact_entity import DataIngestionArtifact
 from src.exception import CustomException
 from src.logger import logging
-from src.data_access.visa_data import USvisaData
+from src.data_access.usvisa_data import USvisaData
 
 
 

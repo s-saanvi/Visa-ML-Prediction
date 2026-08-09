@@ -23,4 +23,4 @@ plotly
 seaborn
 scipy==1.11.4
 
-# -e .
+-e .

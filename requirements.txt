@@ -27,4 +27,4 @@ matplotlib
 plotly
 seaborn
 
--e .
+# -e .

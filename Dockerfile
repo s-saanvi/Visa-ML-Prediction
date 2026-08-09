@@ -1,9 +1,18 @@
-FROM python:3.8.5-slim-buster
+FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY . /app
+# Copy requirements separately for Docker layer caching
+COPY requirements.txt .
 
-RUN pip install -r requirements.txt
+# Upgrade pip
+RUN python -m pip install --upgrade pip
 
-CMD ["python3", "app.py"]
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application source
+COPY . .
+
+# Start application
+CMD ["python", "app.py"]

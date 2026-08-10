@@ -26,6 +26,6 @@ python-multipart
 matplotlib
 plotly
 seaborn
-neuro-mf
+neuro-mf==0.0.5
 
 # -e .

@@ -12,6 +12,7 @@ from pandas import DataFrame
 
 
 
+
 class USvisaData:
     def __init__(self,
                 continent,

@@ -23,6 +23,8 @@ uvicorn
 jinja2
 python-multipart
 
+
+
 matplotlib
 plotly
 seaborn
